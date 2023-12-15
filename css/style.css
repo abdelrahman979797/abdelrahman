@@ -1,0 +1,814 @@
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+html{
+    font-size: 16px;
+}
+
+p{
+    line-height: 1.6;
+}
+:root {
+    --maincolor: #343434;
+    --secundrycolor: #f7f7f7;
+    --bg-color: #fbfbfb;
+--bg-2ndcolor:#f7f7f7;
+}
+
+/* navbar  */
+.navbar {
+    font-size: 1rem;
+    background-color: transparent;
+    position: absolute;
+    padding: 0.8rem 1rem;
+    z-index: 999;
+    
+}
+
+
+.bg-color{
+    background-color: var(--bg-color);
+}
+
+
+.navbar-1 li a {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+/* font-size: 14px; */
+}
+
+.navbar-1:hover a {
+    color: rgb(255, 255, 255);
+
+}
+
+
+.navlogo {
+/* font-size: 10rem; */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+/* background-color: #1c1c1c; */
+}
+
+.navlogo:hover {
+    color: white;
+}
+
+.active-home {
+    position: relative;
+}
+
+.active-home::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    transition: all 0.3s;
+}
+
+.nav-link {
+    font-size: 0.8rem;
+}
+
+.nav-item{
+    padding: 10px 12px;
+}
+
+/* navbar-1 */
+
+
+
+
+
+
+
+/* sticy nav  */
+.navbar-nav .nav-link.active{
+    position: relative;
+}
+
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+
+
+
+
+.navbar-2 {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding: 0rem 1rem;
+    z-index: 10;
+
+}
+.navbar-2 li a {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0rem;
+/* font-size: 14px; */
+}
+
+
+
+
+
+
+/* .active-home-1 {
+    position: relative;
+overflow: hidden;
+} */
+
+.active-home-1:hover::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: rgb(150, 124, 124);
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.active-home-1::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: -30%;
+    bottom: 30%;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+
+
+.navbar-2 li a {
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+
+}
+
+
+
+
+
+
+
+.navlogo-1 {
+
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+
+.navlogo-1:hover {
+    color: rgb(0, 0, 0);
+}
+
+.active-home-1 {
+    position: relative;
+}
+
+
+
+/* sticy nav  */
+
+
+
+
+
+
+
+
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.662), rgba(0, 0, 0, 0.662)), url(../imgs/bg.jpg);
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    z-index: 30;
+    /* background-attachment: fixed; */
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.hometxt {
+    /* width: 70%; */
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hometxt h2{
+    font-size: 3.5rem;
+}
+
+.home-icons a{
+    color: white;
+    font-size: small;
+}
+
+.home-icons li{
+    padding:2px 4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.home-icons i{
+width: 1.25rem;
+height: 1.25rem;
+}
+/* home ends  */
+
+
+/* about me  */
+
+.about-me{
+    background-color: #ffffff;
+}
+
+.img-border{
+    background-image: url(../imgs/dots.png);
+    position: relative;
+    background-position: bottom;
+}
+.img-border img{
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+
+
+.about-text {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.about-text p{
+    color: #748182;
+}
+.progress-bar{
+    background-color:#1c1c1c;
+    border-radius: 5px;
+    position: absolute;
+    
+}
+
+.progress{
+height: 1.5rem;
+border-radius: 5px;
+position: relative;
+background-color: #f7f7f7;
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar h6{
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+
+
+
+.about-text button{
+    padding: 10px 30px;
+margin: 30px 0px;
+font-size: 1rem;
+border-radius: 5px;
+transition: all 0.5s;
+}
+
+
+
+.first-btn{
+background-color: black;
+color: white;
+}
+
+.first-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.second-btn{
+background-color: rgb(255, 255, 255);
+color: black;
+}
+
+.second-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* about-me ends  */
+
+
+/* services starts  */
+
+.head-of-the-div{
+    width: fit-content;
+    height: auto;
+    background-image: url(../imgs/dots.png);
+    background-position: bottom;
+    text-align: center;
+}
+
+.head-h{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--maincolor);
+    bottom: 8px;
+}
+
+.servises {
+    text-align: center;
+    
+}
+
+.serv-content{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ffffff;
+    font-size: 1.1rem;
+
+    transition: all 0.5s;
+    padding: 50px 20px;
+    box-shadow: 0px 3px 15px -5px rgb(172, 172, 172);
+}
+
+.serv-content:hover  i{
+    color: rgb(255, 255, 255);
+    background-color: var(--maincolor);
+
+
+}
+.serv-content i{
+    background-color: var(--secundrycolor);
+    font-size: 2rem;
+    border-radius: 50% ;
+    transition: all 0.3s;
+}
+
+.serv-content h3{
+    font-size: 1.1rem;
+    padding: 1.25rem;
+}
+
+.serv-content p{
+    font-weight: 500;
+    font-size: 0.9rem; 
+    word-spacing: 2px;
+    color: #748182;
+    
+
+}
+
+.bg-color{
+    background-color: var(--bg-color);
+}
+
+
+
+
+/* services ends  */
+
+
+
+
+/* portofolio start  */
+.nav-link .active{
+    background-color: #1c1c1c;
+position: relative;
+}
+
+
+
+
+.nav-pills .nav-link{
+    background-color: transparent;
+    color: #1c1c1c;
+    font-weight: 900;
+    font-size: 1rem;
+
+}
+.nav-pills .nav-link::after{ 
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+    transition: all 0.3s;
+}
+
+
+.nav-pills .nav-link:hover{
+    color: #1c1c1c;
+}
+
+.nav-pills .nav-link.active{
+position: relative;
+background-color: transparent;
+color: #1c1c1c;
+}
+.nav-pills .nav-link.active::after {
+    content: "";
+    width: 70%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 15%;
+    bottom: 20%;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.port-card{
+    border-radius: 0%;
+}
+
+
+.port-layer{
+    background-color: #ffffffef;
+    position: absolute;
+    bottom: 5px;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    transition :all 0.5s;
+    opacity: 0;
+    /* scale: 0.1; */
+    transform: translateY(10px);
+}
+
+.port-card h5{
+    transform: translateY(-15px);
+    transition :all 0.5s;
+}
+.port-card:hover h5{
+    transform: translateY(0px);
+}
+
+
+.port-card:hover .port-layer{
+    transform: translateY(0px);
+opacity: 1;
+scale: 1;
+}
+
+.port-layer-icons{
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1c1c1c;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+        border-radius: 50% ;
+        transition: all 0.5s;
+        border: 1px solid ;
+    margin: 0px 5px;
+    }
+    
+    .port-card:hover .layer-icons{
+        transform: translateY(0px);
+    }
+
+
+    .port-layer-icons:hover{
+        color: #1c1c1c;
+        background-color: #ffffff
+        
+    
+    }
+
+
+
+    .port-img{
+        overflow: hidden;
+        border-radius: 0%;
+    }
+
+    .port-img .port-img-top{
+        width: 100%;
+        transition: 1s;
+        border-radius: 0%;
+
+    }
+
+/* model  */
+
+.modal i{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    color: #9e9e9e;
+    font-size: 0.9rem;
+    transition: all 0.5s;
+}
+
+.modal i:hover{
+    color: #1c1c1c;
+}
+
+
+
+.modal-dialog {
+    width: 80%;
+}
+
+
+
+    .modal-content{
+        width: 100%;
+    }
+
+    .modal-body{
+        padding: 0%;
+        
+    }
+
+/* portfolio ends  */
+
+
+
+
+/* slider start  */
+
+
+.sliders p{ text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #748182;
+
+
+}
+
+.sliders h5{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 30px 0px 5px;
+}
+
+.sliders h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* margin: 30px 0 5px; */
+}
+
+
+.clint-img{
+    max-width: 6rem;
+}
+
+.carousel-indicators{
+    bottom: -120px;
+}
+.carousel-dark .carousel-indicators [data-bs-target]
+{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin: 100px 5px;
+    background-color: #869791;
+    
+}
+
+
+/* slider ends  */
+
+
+/* icons-div starts */
+
+    
+    .icon{
+    text-align: center;
+    font-size: 1.7rem;
+    }
+    
+    
+    .icon i{
+        color: #343434;
+        font-size: 2rem;
+    
+    }
+    
+    .icons-text {
+        text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    .icons-text h3{
+       font-weight: 900;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #343434;
+    
+    }
+    
+    .icons-text p{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #748182;
+    }
+
+/* icons-div ends  */
+
+
+/* our team starts */
+.bgcolor{
+    background-color: #f7f7f7;
+}
+
+.card{
+    border-radius: 0%;
+}
+
+
+.layer{
+    background-color: #ffffffef;
+    position: absolute;
+    bottom: 5px;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    transition :all 0.5s;
+    opacity: 0;
+    scale: 0.1;
+}
+
+.card:hover .layer{
+    
+    transform: rotatey(360deg);
+    opacity: 1;
+scale: 1;
+}
+
+.layer-icons{
+    color: #ffffff;
+    text-align: center;
+    background-color: #1c1c1c;
+    width: 45px;
+    height: 45px;
+    padding: 15px;
+        border-radius: 50% ;
+        transition: all 0.5s;
+        border: 1px solid ;
+    margin: 0px 5px;
+    }
+    
+    .layer-icons:hover{
+        color: #1c1c1c;
+        background-color: #ffffff
+        
+    
+    }
+
+
+
+    .card-img{
+        overflow: hidden;
+        border-radius: 0%;
+    }
+
+    .card-img .card-img-top{
+        width: 100%;
+        transition: 1s;
+        border-radius: 0%;
+
+    }
+
+    .card-img:hover .card-img-top{
+scale: 1.1;
+    }
+
+    .card-bg{
+        background-color: 
+        #5b5b5b;
+    }
+
+/* our team ends  */
+
+/* contact us  */
+.contact-us-inner i{
+    background-color: #f4f4f4;
+    color: #1c1c1c;
+    transition: all 0.5s;
+    font-size: 3rem;
+}
+.contact-us-inner:hover i{
+    background-color: #1c1c1c;
+    color:#f4f4f4 ;
+}
+
+.contact-us h5{
+    font-size: 1rem;
+}
+
+.contact-us p{
+    text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #748182;
+
+
+}
+
+.contact-us-feild input ,textarea{
+    background-color: #f4f4f4;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15) inset;
+font-size: 1rem;
+border-radius: 5px;
+    
+}
+
+.contact-us-feild textarea{
+height: 160px;
+max-height: 160px;
+max-width: 100%;}
+
+.sub-btn{
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+    }
+    
+    .sub-btn:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+/* contact-us ends  */
+
+/* footer  */
+.footer-bg{
+    background-color: 
+    #1c1c1c;
+    color: #5d6d72;
+}
+/* footer ends  */
+
+
+
+
+
+/* tablet */
+@media screen and(max-width:979px) and (min-width:768px) {
+
+
+
+}
+
+
+
+/* landscape */
+@media screen and (max-width:767px) and (min-width:501px){
+    html{
+        font-size: 32px;
+    }
+} 
+
+
+@media screen and (max-width:500px){
+
+    html{
+        font-size: 64px;
+    }
+} 
